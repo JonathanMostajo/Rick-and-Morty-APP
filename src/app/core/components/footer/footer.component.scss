@@ -1,0 +1,20 @@
+@import "../../../../styles.scss";
+
+footer{
+    width: 100vw;
+    bottom: 0;
+    height: 4vh;
+    margin-top: 2vh;
+
+    .footer-container{
+        text-align: justify;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &__creator{
+            /* background-color: $primary-color; */
+            color: $secondary-color;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<ng-container *ngIf="!characterList.length">
+  <img src="https://res.cloudinary.com/dxkva5huh/image/upload/v1642958198/Rick%20and%20Morty/rick-and-morty_rpqs6h.gif" alt="Loading"/>
+</ng-container>
+<div id="characters">
+  <ng-container *ngIf="characterList.length">
+    <h1 class="card-title">CHARACTERS</h1>
+    <div class="character-card">
+      <ul class="card-list">
+        <li class="card-list__item" *ngFor="let character of characterList" routerLink="{{character.id}}" >
+          <h3 class="card-list__item--title">{{ character.id }} - {{ character.name }}</h3>
+          <img class="card-list__item--img" src="{{ character.image }}" alt="{{ character.name }}"/>
+        </li>
+      </ul>
+    </div>
+  </ng-container>
+</div>
