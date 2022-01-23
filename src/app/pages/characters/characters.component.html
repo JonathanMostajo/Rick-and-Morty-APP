@@ -1,6 +1,6 @@
-<ng-container *ngIf="!characterList.length">
-  <img src="https://res.cloudinary.com/dxkva5huh/image/upload/v1642958198/Rick%20and%20Morty/rick-and-morty_rpqs6h.gif" alt="Loading"/>
-</ng-container>
+<div class="div-loading" *ngIf="!characterList.length">
+  <img class="div-loading__gif" src="https://res.cloudinary.com/dxkva5huh/image/upload/v1642958243/Rick%20and%20Morty/portal_uwmeyp.gif" alt="Loading"/>
+</div>
 <div id="characters">
   <ng-container *ngIf="characterList.length">
     <h1 class="card-title">CHARACTERS</h1>
